@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: sprint-cloud-client
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
