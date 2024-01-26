@@ -7,18 +7,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Controller implements ControllerInt {
-    @Autowired
+public class Controller{
+    /*@Autowired
     @Lazy
-    private EurekaClient eurekaClient;
+    private EurekaClient eurekaClient;*/
 
     @GetMapping("/abc")
     public void test(){
         System.out.println("Hello World");
-    }
-
-    @Override
-    public String greeting() {
-        return String.format("hello from greeting!!!!");
     }
 }

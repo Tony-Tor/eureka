@@ -1,3 +1,5 @@
 /.idea/
 /eurekaClient/.gradle/
 /serverEureka/.gradle/
+/eurekaClient/build/
+/serverEureka/build/

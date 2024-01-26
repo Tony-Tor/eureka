@@ -1,7 +1,11 @@
 spring:
   application:
-    name: sprint-cloud-client
+    name: eureka-client-service
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      defaultZone: http://localhost:8761/eureka

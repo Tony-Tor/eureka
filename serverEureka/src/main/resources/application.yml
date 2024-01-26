@@ -8,5 +8,6 @@ eureka:
 
 spring:
   cloud:
-    config:
-      uri: http://localhost:8081
+    loadbalancer:
+      ribbon:
+        enabled: false
